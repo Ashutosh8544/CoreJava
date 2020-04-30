@@ -1,0 +1,10 @@
+package com.as.string;
+
+public class charAtTest {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.as.string;
+
+public class JoinTest {
+
+	public static void main(String[] args) {
+		String s1 = String.join("-","a","b","c","d","e");
+		String s1 = String.join("","a","b","c","d");
+		
+
+	}
+
+}

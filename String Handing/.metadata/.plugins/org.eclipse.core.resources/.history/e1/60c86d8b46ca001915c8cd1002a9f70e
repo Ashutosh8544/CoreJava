@@ -1,0 +1,20 @@
+package com.as.string;
+
+public class TrimText {
+
+	public static void main(String[] args) {
+		String s1 = "abc bbc     ";
+		System.out.println(s1.length());
+		System.out.println(s1);
+		System.out.println("_______________________________________________________________");
+		
+		s1.trim();
+		System.out.println(s1.length());
+		System.out.println(s1);
+		System.out.println("_______________________________________________________________");
+		
+		
+
+	}
+
+}

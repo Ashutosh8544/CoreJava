@@ -1,0 +1,3 @@
+class Sample extends Example{
+	
+}

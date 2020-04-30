@@ -1,0 +1,10 @@
+package com.as.string;
+
+public class PasswordNotFoundException extends Exception{
+	public PasswordNotFoundException() {
+		// TODO Auto-generated constructor stub
+	}
+	public PasswordNotFoundException(String message) {
+		super(message);
+	}
+}

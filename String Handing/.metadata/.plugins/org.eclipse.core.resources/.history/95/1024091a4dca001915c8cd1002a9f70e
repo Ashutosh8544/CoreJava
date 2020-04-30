@@ -1,0 +1,26 @@
+package com.as.string;
+
+public class toStringTest {
+
+	public static void main(String[] args) {
+		String s1 = "Hari";
+		System.out.println("s1:" + s1);;
+		System.out.println("s1: "+ s1.toString());
+		System.out.println("_________________________________________");
+		
+		String s2 = new String("NareshNIT");
+		System.out.println("s2:" + s2);;
+		System.out.println("s2: "+ s2.toString());
+		System.out.println("_________________________________________");
+		
+		String s3 = null;
+		System.out.println("s3:" + s3);;
+		System.out.println("s3: "+ s3.toString());
+		System.out.println("_________________________________________");
+		
+		
+		
+		
+		
+	}
+}

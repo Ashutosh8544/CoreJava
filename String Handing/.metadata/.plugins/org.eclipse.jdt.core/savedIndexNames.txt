@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+D:\Naresh IT\Programs\01CJ\String Handing\.metadata\.plugins\org.eclipse.jdt.core
+2127375358.index
+3203920501.index

@@ -1,0 +1,77 @@
+package com.as.string;
+
+import java.util.Scanner;
+
+public class UseranamePasswordValidator {
+	boolean on = false;
+
+	public String username(String username) throws Exception {
+		if (username.isEmpty()) {
+				throw new UserNotFoundException("username should not be balnk");
+			}
+		else if (username.isBlank())
+			throw new UserNotFoundException("username should not be balnk");
+		return "Welcome to Naresh IT";
+	}
+
+	public String password(String password) throws PasswordNotFoundException {
+		int len = 0;
+		char ch = ' ';
+		boolean upperFound = false;
+		boolean spaceFound = false;
+		boolean digitFound = false;
+		int index = 0;
+		len = password.length();
+		if (len < 8 || len > 16) {
+			throw new PasswordNotFoundException("Password must have 8-16 characters");
+		} else {
+			password = password.trim();
+			if (password.isEmpty())
+				throw new PasswordNotFoundException("Password can not blank space");
+			else {
+				for (index = 0; index < len; index++) {
+					ch = password.charAt(index);
+					if (Character.isLetter(ch)) {
+						if (Character.isUpperCase(ch))
+							upperFound = true;
+					} else if (Character.isDigit(ch))
+						digitFound = true;
+					else if (!Character.isWhitespace(ch))
+						spaceFound = true;
+				}
+				if (upperFound & digitFound & spaceFound) {
+
+					return "valid password";
+				} else {
+					throw new PasswordNotFoundException("Invalid password \n" + "password must contain one Upper case,"
+							+ " one digit, one special character");
+				}
+			} // for
+		}
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = null;
+		String username = null;
+		String password = null;
+		String userResult = null;
+		String passResult = null;
+		sc = new Scanner(System.in);
+		if (sc != null) {
+			System.out.println("Enter username");
+			username = sc.next();
+			System.out.println("Enter password");
+			password = sc.next();
+		}
+		UseranamePasswordValidator upv = new UseranamePasswordValidator();
+		try {
+			userResult = upv.username(username);
+			passResult = upv.password(password);
+			System.out.println(userResult);
+			System.out.println(passResult);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

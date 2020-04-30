@@ -1,0 +1,6 @@
+Constructor available in FileOutptStream class
+1.	FileOutputStream(String name) throws fileNotFoundException(1.0 v)
+2.	FileOutputStream(File file) throws fileNotFoundException(1.0 v)
+3.	FileOutputStream(FileDiscriptor) throws fileNotFoundException(1.0 v)
+4.	FileOutputStream(String name, boolean append) throws fileNotFoundException(1.4 v)
+5.	FileOutputStream(File file, boolean  append) throws fileNotFoundException(1.4 v)

@@ -1,0 +1,21 @@
+package com.as.string;
+
+public class Demo {
+	int b = 10;
+
+	public void m1(int a) {
+		this.b = a;
+		System.out.println(a);
+	}
+
+	public static void main(String[] args) {
+		int a = 20;// local variable
+		System.out.println(a);
+		System.out.println("=============================");
+		Demo d = new Demo();
+		d.m1(a);
+		System.out.println("=============================");
+		int c = d.b;
+		System.out.println(c);
+	}
+}

@@ -1,0 +1,17 @@
+Alhorithm to write data in file by FileOutputStream class..
+1.	Add a statement java.io.* package for getting the all class in the program
+2.	Create an object of FileOutputStream class	 
+3.	call the method FOS.write(); for writing the data in stream
+4.	call the method FOS.flush(); for saving the data  in file from stream. 
+5.	call the method FOS.close(); for relesing the stream.
+6.	handle the FileNotFoundException and IoException
+
+
+
+Alhorithm to write data in file by FileInputStream class..
+1.	Add a statement java.io.* package for getting the all class in the program
+2.	Create an object of FileInputStream class	 
+3.	call the method FIS.read(); for reading the data from file.
+5.	call the method FIS.close(); for relesing the stream.
+6.	handle the FileNotFoundException and IoException
+
